@@ -37,7 +37,7 @@ const App = () => {
   return (
     <div className="App">
         <form onSubmit={handleSubmit}>
-          <input type="type"/>
+          <input type="text"/>
           <button>Update Name</button>
           </form>
        <p>Person Name: {Person.name}</p>
