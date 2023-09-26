@@ -2,14 +2,11 @@
 <h1>video 2  : usestate</h1>           //////////////////////////////////////////   counter app
 
 import {useState} from "react";
-
 const App = () => {
   const [count,setCount] = useState(0);
-
   const increment = ()  => {
     setCount((preCount) => preCount + 1)
-  };
-     
+  }; 
      return (
        <div className="App">
          <p>You clicked {count} times</p>
