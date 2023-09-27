@@ -63,7 +63,7 @@ export function App () {
 export default Counter;
 
 ```
-> ***counter app update the number only background     using react js ***
+> counter app update the number only background     using react js 
 ```
   function Counter(){
     let count = 0;
@@ -93,8 +93,9 @@ export default Counter;
 ```
 
 
-////////////////////////////////////////////////////////////
-```index.js////
+>////////////////////////////////////////////////////////////
+```
+index.js
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
@@ -112,12 +113,12 @@ root.render(
 ```
 
 >counter app using usestate       using usestate
-
-```App.js
+```
+ App.js
 
 import {useState} from "react";
 
-  function Counter(){
+   function Counter(){
       let [count, setCount] =  useState(0);
 
       const  handleIncrement = () => {
@@ -140,7 +141,9 @@ import {useState} from "react";
 }
 
 export default Counter;
-index.js\\\\\\\\\\\\\\\\\\\\
+
+> index.js\\\\\\\\\\\\\\\\\\\\
+```
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
