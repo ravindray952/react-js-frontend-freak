@@ -1,6 +1,10 @@
-# react-js-frontend-freak
+# React-js-frontend-freak
 
-<h1>video 1</h1> //////////////////////////////////////////////////////////////////////////////////////////////////////////frontend frek
+>USE GITHUB DOCX FOR README FILE IMPROVE
+
++ video1    **frontend frek**
+
+```
 
 import "./styles.css";
 // import {Component}  from "react";
@@ -15,8 +19,9 @@ export function App () {
     </div>
   );
 }
-
-props////////////////////////////////////////////////
+```
+>***props***
+```
 import "./styles.css";
 // import {Component}  from "react";
 function Greeting (props) { 
@@ -30,10 +35,10 @@ export function App () {
     </div>
   );
 }
-
-/////////////////////////////////////////////////////////////////////////////////counter app  using react js /////////////////////////////////
-app.js  
-
+```
+> ***counter app  using react js*** 
+##app.js  
+```
  function Counter(){
     let count = 0;
     const handleIncrement =()  => {
@@ -57,7 +62,9 @@ app.js
 
 export default Counter;
 
-///////////////////////////////////////////////////////////////////counter app update the number only background
+```
+> ***counter app update the number only background     using react js ***
+```
   function Counter(){
     let count = 0;
     const handleIncrement =()  => {
@@ -83,9 +90,11 @@ export default Counter;
 
 export default Counter;
 
+```
+
 
 ////////////////////////////////////////////////////////////
-index.js////
+```index.js////
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
@@ -100,6 +109,148 @@ root.render(
   </StrictMode>
 );
 
+```
+
+>counter app using usestate       using usestate
+
+```App.js
+
+import {useState} from "react";
+
+  function Counter(){
+      let [count, setCount] =  useState(0);
+
+      const  handleIncrement = () => {
+          setCount(count + 1)
+    };
+    
+     const handleDecrement = () => {
+           setCount(count -1)
+     };
+
+    return (
+      <div>
+         <h1>{count}</h1>
+       <div>
+     <button onClick={handleIncrement}>Increment</button>  
+     <button onClick={handleDecrement}>Dercrement</button>
+     </div>
+ </div>
+    )
+}
+
+export default Counter;
+index.js\\\\\\\\\\\\\\\\\\\\
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+
+import Counter from "./App";
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
+     <Counter/>
+  </StrictMode>
+
+);
+
+
+   ```
+
+
+>***increment, decrement, reset***
+```
+ +app.js   (index.js is same in all)
+import {useState} from "react";
+
+  function Counter(){
+      let [count, setCount] =  useState(0);
+
+      const  handleIncrement = () => {
+          setCount(count + 1)
+    };
+    
+     const handleDecrement = () => {
+           setCount(count -1)
+     };
+
+     const  handleReset = ()  => {
+           setCount(0)
+     };
+    return (
+      <div>
+         <h1>{count}</h1>
+       <div>
+     <button onClick={handleIncrement}>Increment</button>  
+     <button onClick={handleDecrement}>Dercrement</button>
+     <button onClick={handleReset}>Reset</button>
+     </div>
+ </div>
+    )
+}
+
+export default Counter; 
+
+```
+
+
+>////////Ask a factor from the user for increment and decrement///////
+APP,JS HAI YE , INDEX,JS SAME HAI HR M
+```
+  import {useState} from "react";
+
+  function Counter(){
+      let [count, setCount] =  useState(0);
+      let [factor,setFactor] = useState(2);
+
+      const  handleIncrement = () => {
+          setCount(count + factor);
+    };
+    
+     const handleDecrement = () => {
+           setCount(count - factor);
+     };
+     
+     const  handleReset = ()  => {
+           setCount(0);
+     };
+     
+     const handleUpdateFactor = (inputFactor) => {        /////////////YYE CONDITION BAAD ME LIKHI MAINE
+       if(inputFactor){
+           setFactor(inputFactor)
+       } else {
+         setFactor(1);                             /// ISKA MTLB HAI HAI BOX ME SB KUCH HTA DEOGE FIR BHI EK RHEGA HI
+       }
+     }
+
+
+   
+    return (
+      <div>
+         <h1>{count}</h1>
+       <div>
+     <button onClick={handleIncrement}>Increment</button>  
+     <button onClick={handleDecrement}>Dercrement</button>
+     <button onClick={handleReset}>Reset</button>
+     </div>
+     <div>
+        Tell me a factor by which increment and decrement
+         should happen
+         <input type="number"  value={factor}
+       onChange={(e) => handleUpdateFactor
+       ((e.target.valueAsNumber))}
+       />
+     </div>
+     
+ </div>
+    );
+}
+
+export default Counter;
+
+```
 
 
 
@@ -124,6 +275,7 @@ root.render(
 
 
 
+  > <h1>video 2  : usestate</h1>           counter app
 
 
 
@@ -131,8 +283,8 @@ root.render(
 
 
 
-<h1>video 2  : usestate</h1>           //////////////////////////////////////////   counter app
 
+```
 import {useState} from "react";
 const App = () => {
   const [count,setCount] = useState(0);
@@ -147,14 +299,14 @@ const App = () => {
      );
 };
 
-export default App;
+export default App; 
+
+```
+
+>+form                      given  for update name
 
 
-///////////////////////////////////////////////////////////////////////////////////////////
-form//////////////////// given  for update name///////////////////////////////////////////////////////////////////
-
-
-
+```
 
 import {useState} from "react";
 
@@ -178,8 +330,11 @@ const App = () => {
   );
 };
 export default App
+
+```
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////updated name code //////////////////////////////////////////////////////////////
+```
 import {useState} from "react";
 
 const App = () => {
@@ -205,7 +360,7 @@ const App = () => {
 };
 export default App
 
-
+```
 
 
 
