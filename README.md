@@ -5,7 +5,6 @@
 + video1    **frontend frek**
 
 ```
-
 import "./styles.css";
 // import {Component}  from "react";
 function Greeting ({name,greeting = "Morning"}) { 
